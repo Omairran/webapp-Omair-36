@@ -1,0 +1,9 @@
+{
+  "name": "webapp",
+  "version": "1.0.0",
+  "description": "static html app",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo \"no start needed\""
+  }
+}
