@@ -1,4 +1,4 @@
-name: Deploy Static Web App to Azure
+name: Deploy Static Website to Azure
 
 on:
   push:
@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Checkout your repo
-      - name: Checkout code
+      # Checkout repo
+      - name: Checkout
         uses: actions/checkout@v4
 
-      # 2. Deploy to Azure Web App
+      # Deploy directly (NO NODE, NO NPM)
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
