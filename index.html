@@ -1,10 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Web App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omair Rana | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #fff;
+        }
+
+        header {
+            background: #020617;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #38bdf8;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #38bdf8;
+        }
+
+        header p {
+            color: #94a3b8;
+        }
+
+        section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: #334155;
+        }
+
+        .skills span {
+            display: inline-block;
+            background: #38bdf8;
+            color: black;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            border-top: 2px solid #38bdf8;
+            margin-top: 40px;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+    </style>
 </head>
+
 <body>
-    <h1>Name: Omair Rana</h1>
-    <h2>Registration No: XXXX-XXX</h2>
+
+<header>
+    <h1>Omair Rana</h1>
+    <p>BS Computer Science | Cloud & AI Enthusiast</p>
+</header>
+
+<section>
+    <h2>👨‍💻 About Me</h2>
+    <div class="card">
+        <p>
+            I am a passionate Computer Science student with strong interest in 
+            Cloud Computing, Artificial Intelligence, and Full Stack Development. 
+            I love building real-world applications and solving problems using technology.
+        </p>
+    </div>
+</section>
+
+<section>
+    <h2>🚀 Projects</h2>
+
+    <div class="card">
+        <h3>AI HR Recruitment System</h3>
+        <p>Developed a full-stack MERN application for automating recruitment using AI.</p>
+    </div>
+
+    <div class="card">
+        <h3>CV Analyzer</h3>
+        <p>Built a system that analyzes resumes and ranks candidates using NLP.</p>
+    </div>
+
+    <div class="card">
+        <h3>Voice Assistant</h3>
+        <p>Created a voice-controlled system for PC automation and coding assistance.</p>
+    </div>
+
+</section>
+
+<section>
+    <h2>🛠 Skills</h2>
+    <div class="card skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>MongoDB</span>
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Azure</span>
+        <span>GitHub</span>
+    </div>
+</section>
+
+<section>
+    <h2>📞 Contact</h2>
+    <div class="card">
+        <p>Email: omair@example.com</p>
+        <p>GitHub: <a href="https://github.com/Omairran" target="_blank">github.com/Omairran</a></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Omair Rana | Portfolio Website</p>
+</footer>
+
 </body>
 </html>
