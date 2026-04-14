@@ -1,29 +1,23 @@
-name: Deploy static site to Azure Web App - app-Omair-36
+name: Deploy Static Web App to Azure
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
+      # 1. Checkout your repo
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Login to Azure
-        uses: azure/login@v2
-        with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_72DCD10E5B3841B8AC901C9432DD9296 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_1DC02CE65DF54BCE8D0CE9D178698D62 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_A36CCAC8460F4B93AFE2B21BDCF8BF89 }}
-
+      # 2. Deploy to Azure Web App
       - name: Deploy to Azure Web App
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'app-Omair-36'
-          slot-name: 'Production'
+          app-name: YOUR_AZURE_APP_NAME
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
